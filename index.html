@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signupindex.css">
+    <title>Sign up form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="page-title-container">
+            <h1 class="page-title">sign up form</h1>
+        </header>
+        <main class="form-container">
+            <form action="" get="post">
+                <fieldset class="personal-details">
+                    <legend>personal details</legend>
+                    <label for="first-name">first name</label>
+                    <input type="text" name="first-name" class="field-input" title="Enter First name" required>
+                    <label for="last-name">last name</label>
+                    <input type="text" name="last-name" class="field-input" title="Enter Last name" required>
+                    <span class="gender-span">
+                        <label class="inline gender-label" for="gender">gender:</label>
+                        <select class="gender-menu" name="gender">
+                            <option value="">choose option</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select>
+                    </span>
+                    <span class="birth-date-span">
+                        <label for="birth-date" class="inline birth-date-label">Date of Birth:</label>
+                        <input type="date" name="birth-date" class="calendar" required>
+                    </span> 
+                </fieldset>
+                <fieldset class="contact-info">
+                    <legend>contact details</legend>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="field-input"  title="Enter Email address" required>
+                    <label for="phone">Phone-number</label>
+                    <input type="tel" name="phone" class="field-input"  title="Enter Phone-number" required>
+                </fieldset>
+                <fieldset class="account-login-detail">
+                    <legend>login details</legend>
+                    <label for="username">create username</label>
+                    <input type="text" name="username" class="field-input" title="Create Username" required>
+                    <label for="password">create password</label>
+                    <input type="text" name="password" class="field-input" title="Create Password" required>
+                </fieldset>
+                <input type="submit" class="sign-up-btn" value="Sign up">
+            </form>
+        </main>
+    </div>
+</body>
+</html>
